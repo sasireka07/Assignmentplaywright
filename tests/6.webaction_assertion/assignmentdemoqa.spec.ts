@@ -32,7 +32,7 @@ const dob=await page.locator('//input[@id="dateOfBirthInput"]');
 await dob.fill('02 Aug 2026');
 await page.keyboard.press('Tab');
 
-//8.Search and Select Computer Science and English
+//8.Search and Select Maths
 const subject=await page.locator('input.subjects-auto-complete__input');
 await subject.click(); 
 await subject.pressSequentially('Maths', { delay: 300 }); 
